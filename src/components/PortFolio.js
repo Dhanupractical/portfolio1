@@ -28,7 +28,7 @@ export default function PortFolio() {
 
       <div className="d-flex flex-column">
        <img className="w-100 h-auto" src={portfolio1} alt="portfolio1"/>
-       <a href="https://github.com/Dhanupractical/portfolio1-website" className="btn btn-success m-lg-4 m-sm-2">GitHub Code</a>
+       <a href="https://github.com/Dhanupractical/portfolio1" className="btn btn-success m-lg-4 m-sm-2">GitHub Code</a>
       </div>
 
       <div className="d-flex flex-column">
