@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap');
+
+:root {
+  --primary-white: #fff;
+  --primary-orange: orange;
+  --primary-dark: rgba(225,255,225,0);
+  --primary-red:#ef4035;
+  --primary-hover-red:#f33501;
+}
+
+body{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+/***************************NAVBAR*****************************/
+nav {
+  z-index: 2;
+}
+.logo{
+  width:7rem;
+}
+
+/*--------------------------MENU LINKS----------------------*/
+nav a.nav-link {
+  font-size: 0.8rem;
+  font-weight: 800;
+  letter-spacing: 0.37rem;
+  cursor: pointer;
+}
+
+nav ul li{
+  text-transform: uppercase;
+} 
+
+.navbar-nav > li > a {
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: var(--primary-white) !important;
+  border-top: 0.18rem solid var(--primary-dark);
+}
+
+.navbar-brand {
+  max-width: 17.25rem;
+  padding: 0 !important;
+  height: 5rem !important;
+}
+
+.navbar-nav > li > a.active, .navbar-nav > li > a.active:focus {
+  border-top: 0.18rem solid  var(--primary-orange);
+}
+
+.navbar-nav > li > a:hover {
+  border-top: 0.18rem solid  var(--primary-orange);
+}
+
+/******************************HEADER************************************/
+
+.header-wrapper {
+  position: relative;
+  background: url(./images/dhanu.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+.main-info {
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  z-index: 1;
+}
+
+.main-info h1 {
+  font-weight:800;
+  color: var(--primary-hover-red);
+  text-transform: uppercase;
+}
+
+/*********************************TYPED TEXT************************************/
+
+.typed-text {
+  font-size: 2rem;
+  color:var(--primary-white);
+  font-weight: bold;
+}
+
+@media(max-width:768px){
+  .main-info h1 {
+    font-size: 1.7rem !important;
+  }
+  .typed-text {
+    font-size: 1.3rem !important;
+  }
+  .header-wrapper {
+    position: relative;
+    background: url(./images/dhanu-mobile.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+  }
+  .main-info {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:20vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+    z-index: 1;
+  }
+  .navbar-brand {
+    width: 7rem;
+  }
+}
+
+/*********************************HEADER MAIN OFFER BUTTOM************************************/
+
+.btn-main-offer {
+border: 6px solid var(--primary-red);
+text-transform: uppercase;
+border-radius: 4px;
+padding: 0.75rem;
+color: black;
+margin: 2rem;
+font-weight: 900;
+}
+
+.btn-main-offer:hover{
+  text-decoration: none;
+  background-color: var(--primary-hover-red);
+  transition: .2s ease-in-out;
+}
+
+/*********************************PARTICLES JS************************************/
+
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+/********************************TIMELINE************************************/
+
+body {
+  background-color: #343a40 !important;
+}
+
+.MuiPaper-root {
+  background-color:skyblue !important;
+}
+
+.MuiTimelineDot-outlinedPrimary {
+  background-color: white !important;
+  border-color: none !important;
+}
+
+.timelineheading {
+  align-self: center !important;
+  margin: 50px !important;
+}
+
+/*************************************CONTACT FORM***************************************/
+
+.main-form-container {
+  height: 100vh;
+}
+
+.textarea-contact {
+max-height: 200px;
+}
+
+.backg {
+  background-color: #212529;
+  color: orange;
+  border-radius: 10px;
+  box-shadow: 5px 4px 4px 5px #ff8c00;
+  margin: 5vh;
+}
+
+.selfcenter{
+  width: 100vw !important;
+}
+.h4text{
+  text-align: center;
+}
+
+/**************************PORTFOLIO**************************************/
+
+.gridcontainer {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 300px 300px 300px;
+  grid-template-rows: 300px 300px;
+  grid-gap: 50px;
+  padding: 25px;
+}
+@media only screen and (max-width:950px){
+  .gridcontainer {
+    grid-template-columns: 300px 300px;
+    grid-template-rows: 300px 300px 300px;
+}
+}
+@media only screen and (max-width:700px){
+  .gridcontainer {
+    grid-template-columns: 300px;
+    grid-template-rows: 300px 300px 300px 300px 300px 300px;
+}
+}
+
+/************************************Contact**************************************/
+
+#contactforgrid {
+  display: grid;
+  justify-content: space-evenly;
+  grid-template-columns: 200px 200px;
+  grid-template-rows: 200px;
+  grid-gap: 50px;
+  padding:25px;
+}
+@media only screen and (max-width:700px) {
+#contactforgrid{
+  grid-template-columns: 200px;
+  grid-template-rows: 200px 200px;
+}
+.timelineheading{
+  text-align: center !important;
+  margin: 10px !important;
+}
+}
+
+/*************************Loader******************************/
+
